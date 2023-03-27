@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/accountListFragment">
+    <fragment
+        android:id="@+id/accountListFragment"
+        android:name="com.quickplay.bank_app.ui.fragments.AccountListFragment"
+        android:label="fragment_account_list"
+        tools:layout="@layout/fragment_account_list" >
+        <action
+            android:id="@+id/action_accountListFragment_to_detailAccountFragment"
+            app:destination="@id/detailAccountFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAccountFragment"
+        android:name="com.quickplay.bank_app.ui.fragments.DetailAccountFragment"
+        android:label="fragment_detail_account"
+        tools:layout="@layout/fragment_detail_account" >
+        <argument
+            android:name="account"
+            app:argType="com.quickplay.bank_app.data.model.Account" />
+        <action
+            android:id="@+id/action_detailAccountFragment_to_accountListFragment"
+            app:destination="@id/accountListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/accountListFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

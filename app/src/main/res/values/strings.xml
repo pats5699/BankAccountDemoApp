@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bank App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_name">Account Name</string>
+    <string name="dummy_amount">$12345678912</string>
+    <string name="dummy_account_number">1221738726193</string>
+    <string name="account_number">Account#</string>
+    <string name="dummy_account_type">CREDIT ACCOUNT</string>
+    <string name="my_balance">My Balance</string>
+    <string name="i_have">I have</string>
+    <string name="i_owe">I owe</string>
+    <string name="description">Description</string>
+    <string name="extra_transaction">Extra Transaction</string>
+    <string name="dummy_time">12:00 AM</string>
+    <string name="date_value">Date: %s</string>
+</resources>
